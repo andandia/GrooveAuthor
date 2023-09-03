@@ -84,7 +84,7 @@ internal sealed class EditorPatternConfig : EditorConfig<Config>, IEquatable<Edi
 		set
 		{
 			Config.SameArrowStepWeight = value;
-			Config.RefreshStepWeightsNormalized();
+			//Config.RefreshStepWeightsNormalized(); //todo 多分コミット漏れ
 		}
 	}
 
@@ -94,9 +94,9 @@ internal sealed class EditorPatternConfig : EditorConfig<Config>, IEquatable<Edi
 		set
 		{
 			Config.NewArrowStepWeight = value;
-			Config.RefreshStepWeightsNormalized();
-		}
-	}
+            //Config.RefreshStepWeightsNormalized(); //todo 多分コミット漏れ
+        }
+    }
 
 	/// <summary>
 	/// Constructor.
